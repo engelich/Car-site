@@ -1,0 +1,82 @@
+@import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+html,
+body{
+  height: 100%;
+}
+
+body{
+  font-family: 'Gilroy;';
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  overflow-x: hidden;
+  min-width: 320px;
+  height: 100%;
+  background: linear-gradient(93deg, #DBE1F1 0%, #F3F5FB 20.47%);
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex: 1 0 auto;
+}
+.footer{
+  flex: 0 0 auto;
+}
+.container{
+  max-width: 1465px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid{
+  max-width: 1890px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullets{
+ display: flex;
+ justify-content: center;
+ padding-bottom: 5px;
+ margin-left: 10px;
+ 
+}
+.swiper-pagination-bullets span{
+  background-color: #363838;
+  opacity: 1;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 15px;
+  width: 8px;
+  height: 8px;
+}
+span.swiper-pagination-bullet-active{
+  background-color: #FFEF35;
+}
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 3s;
+  --animate-delay: 1s;
+ 
+  }
+  .animate__animated.animate__fadeInRight{
+    --animate-duration: 3s;
+  --animate-delay: 1s;
+  
+  }
+  .animate__animated.animate__fadeInUp{
+    --animate-duration: 2s;
+    
+  }
+  .animate__animated.animate__pulse{
+    --animate-duration: 2s;
+    
+  }
+
+
+
+
