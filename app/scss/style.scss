@@ -11,7 +11,8 @@
     border-radius: 15px;
     margin-top: 10px;
     background-color: white;
-
+    z-index: 5;
+    position: relative;
   }
   &__item{
     display: flex;
@@ -224,6 +225,17 @@
 
 
 .top{
+  &__bacgtound-one{
+    position: absolute;
+    background-size: 100%;
+   height: 100vh;
+  }
+  &__bacgtound-two{
+    position: absolute;
+    background-size: 100%;
+   height: 100vh;
+   right: 0;
+  }
  &__item{
   padding-top: 164px;
   display: flex;
@@ -237,7 +249,7 @@
   font-weight: 700;
   line-height: 65px;
   letter-spacing: -1.36px;
-  max-width: 804px;
+ 
 & span{
   color: #009BFF;
 }
@@ -291,6 +303,7 @@
   }
  }
  &__car{
+  width: 100%;
   
   & img{
     max-width: 1020px;
@@ -306,6 +319,7 @@
 
 
 .evolution{
+  position: relative;
   margin-bottom: 20px;
   margin-top: 258px;
   &__wrapper{
@@ -711,6 +725,29 @@ transition: all 0.2s ease-in-out;
     }
   }
 }
+@media(max-width:1700px){
+  .container{
+    max-width: 1280px !important;
+  }
+  .top{
+    &__car img{
+      max-width: 850px;
+    }
+    &__title{
+      font-size: 60px;
+      line-height: 60px;
+    }
+    &__sub-title{
+      font-size: 21px;
+      line-height: 20px;
+    }
+    &__button-content{
+      padding-top: 40px;
+    }
+  }
+}
+
+
 @media(max-width:1500px){
   .evolution{
     &__info-one-three{
@@ -754,24 +791,43 @@ transition: all 0.2s ease-in-out;
   }
 }
 @media(max-width:1400px){
+  .container{
+    max-width: 1100px !important;
+  }
   .top{
     padding-top: 50px;
 
     &__item{
-     
      padding-top: 50px;
       
     }
     &__car{
       & img{
-        max-width: 940px;  
+        max-width: 750px;  
         right: -40px;
         top: 0;
       }
     }
     &__title{
-      font-size: 60px;
-      max-width: 732px;
+      font-size: 51px;
+      width: 634px;
+      line-height: 51px;
+    }
+    &__sub-title{
+      font-size: 18px;
+      line-height: 18px;
+    }
+    &__button{
+      padding: 12px 30px;
+      font-size: 13px;
+    }
+    &__info-btn p{
+      font-size: 13px;
+      padding-right: 15px;
+    }
+    &__info-btn img{
+     
+      margin-left: 15px;
     }
 
   
@@ -808,39 +864,17 @@ transition: all 0.2s ease-in-out;
   }
  
 }
-@media(max-width:1300px){
+
+@media(max-width:1200px){
   .top{
-   padding-top: 0;
-    &__info-btn p{
-      font-size: 12px;
-    }
-    &__title{
-      font-size: 50px;
-      line-height: 50px;
-      max-width: 600px;
-    }
-    &__sub-title{
-      font-size: 20px;
-     padding-top: 15px;
-    }
-    &__car{
-      & img{
-        max-width: 815px;
-      
-        
-      }
-}
-&__button-content{
-  padding-top: 20px;
-}
+    &__car img{
+     max-width: 700px;
   }
-}
-@media(max-width:1100px){
-  .top{
-    &__car{
-      & img{
-        max-width: 700px;
-      }
+  &__sub-title{
+    padding-top: 26px;
+   }
+  &__button-content{
+    padding-top: 30px;
   }
 }
 }
@@ -854,6 +888,12 @@ transition: all 0.2s ease-in-out;
      flex-direction: column-reverse;
      padding-top: 0px;
       
+    }
+    &__bacgtound-one{
+      display: none;
+    }
+    &__bacgtound-two{
+      display: none;
     }
     &__car{
       & img{
@@ -882,8 +922,8 @@ transition: all 0.2s ease-in-out;
     
     }
     &__title{
-      font-size: 63px;
-      line-height: 60px;
+      font-size: 55px;
+      line-height: 55px;
       max-width: 778px;
     }
     &__info-btn p{
@@ -937,6 +977,7 @@ transition: all 0.2s ease-in-out;
 }
 @media(max-width:1034px){
   .popup{
+    padding-top: 10px;
     &__wrapper{
       max-height: 650px;
     }
@@ -1211,7 +1252,7 @@ transition: all 0.2s ease-in-out;
   .top{
     padding-top: 25px;
     &__car img{
-      max-width: 450px;
+      max-width: 100%;
       transform: translateX(-8%);
      
     }
@@ -1239,7 +1280,7 @@ transition: all 0.2s ease-in-out;
   }
  
 }
-@media(max-width:398px){
+@media(max-width:411px){
   .header{
     &__number{
       display: none;
@@ -1261,7 +1302,7 @@ transition: all 0.2s ease-in-out;
      max-width: 323px;
     }
     &__car img{
-      max-width: 400px;
+      
       transform: translateX(-10%);
     }
     &__info-btn p{
@@ -1290,8 +1331,8 @@ transition: all 0.2s ease-in-out;
      
     }
     &__circle{
-      left: 20%;
-     top: 10%;
+      left: 7%;
+     top: 0;
       width: 250px;
       height: 250px;
       
